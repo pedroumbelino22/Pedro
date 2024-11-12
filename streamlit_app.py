@@ -23,7 +23,7 @@ data = yf.Ticker(ticker)
 
 #tabela data noticias principais e filtro por coluna
 data_news = pd.DataFrame(data.news)
-data_news2 = data_news[['title','publisher','link','relatedTickers']]
+data_news2 = data_news['title','publisher','link','relatedTickers']
 
 #Mostrar últimas noticias no site
 st.dataframe(data_news2)
